@@ -84,9 +84,35 @@
   </section>
 
   <section id="booking">
-    <h2>Book Your Appointment</h2>
-    <p>Ready for your next look? Use our <a href="#">online booking system</a> or call/text (555) 123-4567 to schedule your visit.</p>
-  </section>
+  <h2>Book Your Appointment</h2>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="phone">Phone:</label><br />
+    <input type="tel" id="phone" name="phone" required /><br /><br />
+
+    <label for="service">Service:</label><br />
+    <select id="service" name="service" required>
+      <option value="">-- Select a service --</option>
+      <option value="Haircut & Style">Haircut & Style</option>
+      <option value="Color & Highlights">Color & Highlights</option>
+      <option value="Blowout">Blowout</option>
+      <option value="Updo / Bridal">Updo / Bridal</option>
+    </select><br /><br />
+
+    <label for="date">Preferred Date:</label><br />
+    <input type="date" id="date" name="date" required /><br /><br />
+
+    <label for="message">Anything else?</label><br />
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br /><br />
+
+    <button type="submit">Send Request</button>
+  </form>
+</section>
 
   <section id="contact">
     <h2>Contact</h2>
@@ -101,3 +127,4 @@
 
 </body>
 </html>
+Updated booking form
